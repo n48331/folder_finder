@@ -4,7 +4,6 @@ import os
 import subprocess
 
 def openFolder():
-    found.set(f'Search another') 
     parent_folder = f".\{directory.get()}"
     search_folder = search.get()
     for root, subdirs, files in os.walk(parent_folder):
