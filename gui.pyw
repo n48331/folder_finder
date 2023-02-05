@@ -11,8 +11,8 @@ def openFolder():
             if d == search_folder:
                 found.set(f'Found at {root}\{d}')
                 subprocess.Popen(f'explorer "{root}\{d}"')
-                exit(0)
-                 
+                break
+        break  
             
 
 
