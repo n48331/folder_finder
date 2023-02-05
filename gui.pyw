@@ -12,6 +12,7 @@ def openFolder():
                 found.set(f'Found at {root}\{d}')
                 try:
                     subprocess.Popen(f'explorer "{root}\{d}"')
+                    break
                 except:
                     print('Not found')
 
