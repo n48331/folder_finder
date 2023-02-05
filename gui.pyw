@@ -10,11 +10,10 @@ def openFolder():
         for d in subdirs:
             if d == search_folder:
                 found.set(f'Found at {root}\{d}')
-                try:
-                    subprocess.Popen(f'explorer "{root}\{d}"')
-                    break
-                except:
-                    print('Not found')
+                subprocess.Popen(f'explorer "{root}\{d}"')
+                exit(0)
+                 
+            
 
 
 root = Tk()
